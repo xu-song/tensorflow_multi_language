@@ -1,0 +1,23 @@
+
+
+.cache
+.idea
+
+# model
+
+
+# library
+*.lib
+*.so
+*.jar
+
+
+# clsss
+*.class
+jni
+
+_*
+
+
+# js
+node_modules
