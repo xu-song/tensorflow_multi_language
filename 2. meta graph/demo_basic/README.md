@@ -24,6 +24,23 @@ linux服务器上编译
 
 ```
 
+# freeze graph
+
+
+```bash
+TRAIN_DIR=model
+freeze_graph \
+    --input_meta_graph=${TRAIN_DIR}/demo.meta \
+    --input_binary=true \
+    --input_checkpoint=${TRAIN_DIR}/demo \
+    --output_graph=${TRAIN_DIR}/frozen_graph.pb \
+    --output_node_names=res
+```
+
+# 参考
+
+
+
 
 
 

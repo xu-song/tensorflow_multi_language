@@ -13,8 +13,8 @@ using namespace tensorflow;
 
 int main()
 {
-    const string pathToGraph = "demo_model/demo.meta";
-    const string checkpointPath = "demo_model/demo";
+    const string pathToGraph = "model/demo.meta";
+    const string checkpointPath = "model/demo";
 
     SessionOptions options;
     options.config.set_allow_soft_placement(true);

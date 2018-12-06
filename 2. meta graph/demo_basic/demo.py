@@ -2,9 +2,10 @@
 import tensorflow as tf
 import os
 
-if __name__ == '__main__':
-    train_dir = os.path.join('demo_model/', "demo")
 
+train_dir = os.path.join('model', "demo")
+
+if __name__ == '__main__':
     # with tf.device('/gpu:0'):
     a = tf.placeholder(dtype=tf.int32, shape=None, name='a')
     b = tf.placeholder(dtype=tf.int32, shape=None, name='b')

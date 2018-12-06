@@ -4,11 +4,14 @@ import tensorflow as tf
 import os
 import numpy as np
 
+train_dir = "model"
+meta_file = os.path.join(train_dir, 'demo.meta')
+
 if __name__ == '__main__':
     config = tf.ConfigProto(allow_soft_placement=True)
     with tf.Session(config=config) as sess:
-        saver = tf.train.import_meta_graph('demo_model/demo.meta')
-        saver.restore(sess, tf.train.latest_checkpoint('demo_model/'))
+        saver = tf.train.import_meta_graph(meta_file)
+        saver.restore(sess, tf.train.latest_checkpoint(train_dir))
         graph = tf.get_default_graph()
         a = graph.get_tensor_by_name("a:0")
         b = graph.get_tensor_by_name("b:0")

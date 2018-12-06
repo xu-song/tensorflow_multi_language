@@ -45,7 +45,7 @@ with tf.Session() as sess:
     saver0.save(sess, 'model/my-model')
 
     """ 2.1 只保存graph
-      这种方式进行freeze graph会报错，write_graph的方式可以freeze graph
+      这种方式进行freeze graph，需要加入参数input_meta_graph
     """
     # Generates MetaGraphDef.
     # 方式一：
