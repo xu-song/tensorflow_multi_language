@@ -13,7 +13,7 @@ def pbtxt_to_graphdef(filename):
     tf.train.write_graph(graph_def, 'pbtxt/', 'protobuf.pb', as_text=False)
 
 def graphdef_to_pbtxt(filename):
-  with gfile.FastGFile(filename,'rb') as f:
+  with gfile.FastGFile(filename, 'rb') as f:
     graph_def = tf.GraphDef()
     graph_def.ParseFromString(f.read())
     tf.import_graph_def(graph_def, name='')

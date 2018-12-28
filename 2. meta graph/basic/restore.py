@@ -7,6 +7,16 @@ import numpy as np
 train_dir = "model"
 meta_file = os.path.join(train_dir, 'demo.meta')
 
+
+
+def restore_graph():
+    """
+    1. import_meta_graph
+    2.
+
+    """
+    pass
+
 if __name__ == '__main__':
     config = tf.ConfigProto(allow_soft_placement=True)
     with tf.Session(config=config) as sess:

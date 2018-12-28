@@ -20,7 +20,5 @@ print_tensors_in_checkpoint_file(
 
 '''
 该代码用于读取 V2 format的checkpoint，f_path不要加尾部扩展.
-
 如何读取V1的checkpoint
-
 '''

@@ -11,7 +11,10 @@ python save
 
 ## freeze & restore
 
+freeze graph
+
 ```bash
+# 或者采用
 TRAIN_DIR=model
 freeze_graph \
     --input_graph=${TRAIN_DIR}/graph.pb \

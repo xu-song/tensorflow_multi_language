@@ -3,7 +3,6 @@
 
 # 必读
 
-
 tf各个版本的环境兼容: https://www.tensorflow.org/install/source#common_installation_problems
 
 ## 下载tensorflow源码
@@ -23,7 +22,6 @@ git checkout r1.8
 # 把tensorflow源码编译成whl文件，编译后保存在 bazel-bin/tensorflow/libtensorflow.so
 bazel build --config=opt //tensorflow:libtensorflow_cc.so
 ```
-
 
 ### GPU-support
 
